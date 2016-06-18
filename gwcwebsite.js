@@ -1,20 +1,24 @@
-var pages = [$("#Home"), $("#Aboutlink"), $("#GameList"), $("#HalfSunrise"), $("#LifeUncertain"), $("#Game1"), $("#Game2"), $("#Amazonia")]
+var pages = [$("#Home"), $("#Aboutlink"), $("#GameList"), $("#HalfSunrise"), $("#LifeUncertain"), $("#TheRiggedGameOfLife"), $("#WhoKilledEqualPay"), $("#Amazonia")]
 
 console.log($);
 
-$(document).ready(function(){
-$("#Home1").click(function(){
-	console.log("here");
+function goHome()
+{
 	$("#Home").show();
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
-})
+};
+
+$(document).ready(function(){
+goHome();
 });
+
+$("#Home1").click(goHome)
 
 $("#Aboutlink1").click(function(){
 	$("#Aboutlink").show();
@@ -22,8 +26,8 @@ $("#Aboutlink1").click(function(){
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
 });
 
@@ -34,8 +38,8 @@ $("#GameList1").click(function(){
 	$("#Aboutlink").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
 });
 
@@ -45,8 +49,8 @@ $("#Game1").click(function(){
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
 });
 
@@ -56,39 +60,39 @@ $("#Game2").click(function(){
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
 });
 $("#Game3").click(function(){
-	$("#noname").show();
+	$("#TheRiggedGameOfLife").show();
 	$("#Home").hide();
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname2").hide();
+	$("#WhoKilledEqualPay").hide();
 	$("#Amazonia").hide();
 });
 $("#Game4").click(function(){
-	$("#noname2").show();
+	$("#WhoKilledEqualPay").show();
 	$("#Home").hide();
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
+	$("#TheRiggedGameOfLife").hide();
 	$("#Amazonia").hide();
 });
-$("#Amazonia").click(function(){
+$("#Game5").click(function(){
 	$("#Amazonia").show();
 	$("#Home").hide();
 	$("#Aboutlink").hide();
 	$("#GameList").hide();
 	$("#HalfSunrise").hide();
 	$("#LifeUncertain").hide();
-	$("#noname").hide();
-	$("#noname2").hide();
+	$("#TheRiggedGameOfLife").hide();
+	$("#WhoKilledEqualPay").hide();
 });
 
 // function ShowHideDiv (divId){
